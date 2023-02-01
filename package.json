@@ -7,6 +7,7 @@
     "create-wh3-app": "./dist/index.js"
   },
   "scripts": {
+    "publish": "yarn run build && npm publish --access public",
     "build": "tsc --noEmit ./index.ts && esbuild index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js"
   },
   "dependencies": {

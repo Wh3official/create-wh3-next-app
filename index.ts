@@ -54,9 +54,6 @@ const action = async ({name, pm}: {
     name: string,
     pm: string
 }) => {
-    console.log({name, pm})
-
-    //todo add a check for name
     if (name) {
         try {
             let pathOfExecution = path.join(process.cwd(), name)
