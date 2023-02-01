@@ -1,0 +1,26 @@
+{
+  "name": "create-wh3-app",
+  "version": "0.0.1",
+  "main": "index.js",
+  "license": "MIT",
+  "bin": {
+    "create-wh3-app": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --noEmit ./index.ts && esbuild index.ts --bundle --platform=node --format=cjs --outfile=dist/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "esbuild": "0.17.5",
+    "execa": "^6.1.0",
+    "inquirer": "^9.1.4",
+    "listr": "^0.14.3",
+    "typescript": "^4.9.5"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.3",
+    "@types/listr": "^0.14.4",
+    "@types/node": "^18.11.18"
+  }
+}
