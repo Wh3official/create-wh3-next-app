@@ -12,7 +12,7 @@ jobs:
         with:
           node-version: '16.x'
           registry-url: 'https://registry.npmjs.org'
-      - run: yarn && yarn build
+      - run: npm i && npm run build
       - run: npm ci
       - run: npm publish
         env:
