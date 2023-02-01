@@ -19,6 +19,7 @@ program
 
 program.parse();
 const options = program.opts();
+console.log(chalk.blue("Welcome to the WH3 Next App Generator!"))
 const questions = [{
     name: 'name',
     message: 'What are we calling your project?',
