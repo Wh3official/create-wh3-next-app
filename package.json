@@ -1,10 +1,10 @@
 {
-  "name": "create-wh3-app",
+  "name": "create-wh3-next-app",
   "version": "0.0.1",
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "create-wh3-app": "./dist/index.js"
+    "create-wh3-next-app": "./dist/index.js"
   },
   "scripts": {
     "publish": "npm run build && npm publish --access public",

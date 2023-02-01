@@ -10,9 +10,10 @@ import * as path from 'path';
 
 const Listr = require('listr');
 
-const program = new Command();
+const program = new Command()
 program
-    .description('Our New CLI')
+    .name("create-wh3-next-app")
+    .description('')
     .version('0.0.1')
     .option("-n, --name  [project_name]", "Project Name")
 
